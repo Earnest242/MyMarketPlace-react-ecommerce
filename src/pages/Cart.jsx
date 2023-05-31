@@ -11,7 +11,7 @@ const Cart = () => {
       const storedCart = localStorage.getItem("cartItem");
       setCartItem(JSON.parse(storedCart));
     }
-  },[])
+  },[CartItem.length, setCartItem])
   return (
       <section className='cart-items'>
         <Container>

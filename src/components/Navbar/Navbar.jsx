@@ -21,7 +21,7 @@ const NavBar = () => {
       const storedCart = localStorage.getItem("cartItem");
       setCartItem(JSON.parse(storedCart));
     }
-  },[])
+  },[CartItem.length, setCartItem])
   return (
       <Navbar
       fixed="top"
